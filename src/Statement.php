@@ -282,9 +282,9 @@ class Statement implements \Iterator
             }
         }
 
-        if (empty($this->meta)) {
+        /*if (empty($this->meta)) {
             throw new QueryException('Can`t find meta');
-        }
+        }*/
 
         $isJSONCompact=(stripos($this->format,'JSONCompact')!==false?true:false);
         $this->array_data = [];
